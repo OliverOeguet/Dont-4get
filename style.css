@@ -3,7 +3,6 @@
     --second-bg-color: #5EC6C7;
     --text-color: white;
     --main-color: #FDF702;
-
 }
 
 html {
@@ -26,7 +25,12 @@ body {
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: inter;
+}
+
+.logo {
+    display: inline-block;
+    width: 20rem;
 }
 
 nav {
@@ -35,24 +39,22 @@ nav {
     background: var(--bg-color);
     padding: 50px 0;
     box-shadow: 0px 5px 0px var(--second-bg-color);
-    font-size: 30px;
-  }
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
 
-  .navigationLogo {
-    position: relative;
-    
-  }
-
-  nav ul {
+nav ul {
     list-style: none;
     text-align: center;
-  }
-
-  nav ul li {
     display: inline-block;
-  }
+}
 
-  nav ul li a {
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
     display: block;
     padding: 15px;
     text-decoration: none;
@@ -60,31 +62,31 @@ nav {
     font-weight: 800;
     text-transform: uppercase;
     margin: 0 10px;
-  }
+}
 
-  nav ul li a,
-  nav ul li a:after,
-  nav ul li a:before {
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
     transition: all .5s;
-  }
+}
 
-  nav ul li a:hover {
+nav ul li a:hover {
     color: var(--main-color);
-  }
+}
 
 nav.navbar ul li a {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
     z-index: 1;
-  }
+}
 
-  nav.navbar ul li a:hover {
+nav.navbar ul li a:hover {
     color: var(--bg-color);
-  }
+}
 
-  nav.navbar ul li a:before,
-  nav.navbar ul li a:after {
+nav.navbar ul li a:before,
+nav.navbar ul li a:after {
     position: absolute;
     width: 0px;
     height: 100%;
@@ -97,17 +99,17 @@ nav.navbar ul li a {
     color: transparent;
     z-index: -1;
     opacity: 0.75;
-  }
+}
 
-  nav.navbar ul li a:before {
+nav.navbar ul li a:before {
     left: 0;
-  }
+}
 
-  nav.navbar ul li a:after {
+nav.navbar ul li a:after {
     right: 0;
-  }
+}
   
-  nav.navbar ul li a:hover:after,
-  nav.navbar ul li a:hover:before {
+nav.navbar ul li a:hover:after,
+nav.navbar ul li a:hover:before {
     width: 100%;
-  }
+}
