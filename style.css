@@ -10,13 +10,6 @@ html {
     overflow-x: hidden;
 }
 
-
-body {
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-
 * {
     margin: 0;
     padding: 0;
@@ -28,29 +21,32 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
 nav {
     width: 100%;
-    margin: 0 auto;
+    height: 80px;
     background: var(--bg-color);
-    padding: 10px;
-    box-shadow: 0px 5px 0px var(--second-bg-color);
-    justify-content: space-between;
+    border-bottom: 1px solid var(--text-color);
+    justify-content: space-around;
     align-items: center;
     overflow: hidden;
     display: flex;
-    height: 100px;
+    font-size: 16px;
 }
 
-.logo img {
-    height: 100px;
-    width: auto;
-    margin-left: 20px;
+.logo img {  
+    max-height: 100%;
+    max-width: 100px;
+    margin-left: 5rem;
+    padding: 1rem;
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    display: inline-block;
+nav a {
+    margin-right: 5rem;
 }
 
 nav ul li {
@@ -58,13 +54,15 @@ nav ul li {
 }
 
 nav ul li a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
+    padding: 1rem;
     color: var(--text-color);
-    font-weight: 800;
     text-transform: uppercase;
-    margin: 0 10px;
+}
+
+nav.navbar ul li a {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 nav ul li a,
@@ -77,15 +75,9 @@ nav ul li a:hover {
     color: var(--main-color);
 }
 
-nav.navbar ul li a {
-    position: relative;
-    border-radius: 5px;
-    overflow: hidden;
-    z-index: 1;
-}
 
 nav.navbar ul li a:hover {
-    color: var(--bg-color);
+    color: black;
 }
 
 nav.navbar ul li a:before,
@@ -115,4 +107,57 @@ nav.navbar ul li a:after {
 nav.navbar ul li a:hover:after,
 nav.navbar ul li a:hover:before {
     width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3.6rem;
+    color: var(--main-color);
+}
+
+/* Home section */
+.home-content {
+    background-color: var(--bg-color);
+}
+
+.home-content img{
+    width: 75%;
+    float: right;
+}
+
+/* Kartenübersicht section */
+.overview-content {
+    background-color: var(--second-bg-color);
+}
+
+/* Spielanleitung section */
+.directions-content {
+    background-color: var(--bg-color);
+}
+
+/* FAQ section */
+.faq-section {
+    background-color: var(--second-bg-color);
+}
+
+/* Proof section */
+.proof-section {
+    background-color: var(--bg-color);
+}
+
+/* Kontakt section */
+.contact-content {
+    background-color: var(--second-bg-color);
+}
+
+/* Footer section */
+footer {
+    background-color: var(--bg-color) ;
+    padding: 3rem;
+}
+
+footer p {
+    font-size: 16px;
+    text-align: center;
+    color: var(--text-color);
 }
