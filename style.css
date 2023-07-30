@@ -71,9 +71,11 @@ nav.navbar ul li a {
     overflow: hidden;
     z-index: 1;
   }
+
   nav.navbar ul li a:hover {
     color: var(--bg-color);
   }
+
   nav.navbar ul li a:before,
   nav.navbar ul li a:after {
     position: absolute;
@@ -89,9 +91,11 @@ nav.navbar ul li a {
     z-index: -1;
     opacity: 0.75;
   }
+
   nav.navbar ul li a:before {
     left: 0;
   }
+  
   nav.navbar ul li a:after {
     right: 0;
   }
